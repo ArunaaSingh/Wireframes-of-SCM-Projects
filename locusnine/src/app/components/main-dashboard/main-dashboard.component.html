@@ -1,0 +1,129 @@
+<div>
+    <div class="row p-2">
+        <div class="col-md-8 col-sm-8 col-lg-8 mat-tab-class">
+            <div class="quad-width pl-5 pt-3 pb-2">
+                <mat-select [(value)]="selectable">
+                    <mat-option *ngFor="let select of selectedList" [value]="select">{{select}}</mat-option>
+                </mat-select>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-lg-4">
+            <div class="mat-tab-class">
+                <mat-tab-group disableRipple="true" mat-align-tabs="start">
+                    <mat-tab label="Top" class="activeTab"></mat-tab>
+                    <mat-tab label="Bottom" class="fontTab"> Bottom </mat-tab>
+                </mat-tab-group>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6 col-sm-6 col-lg-6 p-5">
+        <img width="500px" height="600px" src="./assets/funnel.png" />
+        <div class="centered">
+            <span>Lead in</span>
+            <div class="font30 text-center">25</div>
+        </div>
+        <div class="centered margin100">
+            <span>Contact Made</span>
+            <div class="font30 text-center">18</div>
+        </div>
+        <div class="centered margin200">
+            <span>
+                Needs Defined
+            </span>
+            <div class="font30 text-center">12</div>
+        </div>
+        <div class="centered margin300">
+            <span>Proposal Made</span>
+            <div class="font30 text-center">8</div>
+        </div>
+        <div class="centered margin400">
+            <span>Negotiations Started</span>
+            <div class="font30 text-center">5</div>
+        </div>
+        <div class="centered margin500">
+            <span>WON</span>
+            <div class="font30 text-center">3</div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-3 col-lg-3">
+        <div class="col-md-3">
+            <div class="card">
+                <div class="row">
+                    <img width="40px" height="40px" src="./assets/ico-calls.png" />
+                </div>
+                <div class="text-right mt-5">
+                    <span class="card-label pb-4">
+                        CALLS
+                    </span>
+                    <div class="card-label-bottom pt-2">
+                        10/15
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="row mr-2">
+                    <img width="40px" height="40px" src="./assets/ico-wins.png" />
+                </div>
+                <div class="text-right mt-5">
+                    <span class="card-label pb-4">
+                        WINS
+                    </span>
+                    <div class="card-label-bottom pt-2">
+                        1/3
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="row ml-4">
+                    <img width="40px" height="40px"src="./assets/ico-revenue.png" />
+                </div>
+                <div class="text-right mt-5">
+                    <span class="card-label pb-4 mr-4">
+                        INCREMENTED REVENUE
+                    </span>
+                    <div class="card-label-bottom pt-2">
+                       80k/100k
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-3 col-lg-3">
+        <div class="col-md-3">
+            <div class="bluecard">
+                <div class="mt-5">
+                    <span class="card-label pb-4">
+                        John Smith
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="bluecard">
+                <div class="text-right mt-5">
+                    <span class="card-label pb-4">
+                        Jane Doe
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="bluecard">
+                <div class="text-right mt-5">
+                    <span class="card-label pb-4 mr-4">
+                       Ethan Hunt
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="p-5">
+    <app-detail-dashboard></app-detail-dashboard>
+</div>
